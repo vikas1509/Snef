@@ -1,86 +1,133 @@
 .footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 1.5rem 2rem;
-    background-color: #111111;
-    color: #B6CE5A;
-    width: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  background-color: #111111;
+  color: #B6CE5A;
+  width: 100%; /* Make the footer full width */
+  flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%; /* Ensure full width on smaller screens */
+  margin-bottom: 1rem; /* Add margin for spacing */
+}
+
+.logoImage {
+  width: 50px;
+  height: auto;
+}
+
+.contact {
+  margin-top: 1rem;
+}
+
+.contactEmail {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.icon {
+  margin-right: 0.5rem;
+  width: 20px;
+  height: 20px;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #666666;
+  margin-top: 1rem;
+}
+
+.privacy {
+  margin-left: 1rem;
+  color: #B6CE5A;
+  cursor: pointer;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%; /* Ensure full width on smaller screens */
+}
+
+.navLinks {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 16px;
+  flex-wrap: wrap; /* Allow links to wrap on smaller screens */
+  justify-content: center; /* Center links on smaller screens */
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: #B6CE5A;
+  font-weight: 600;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: center; /* Center social icons on smaller screens */
+  flex-wrap: wrap; /* Allow social icons to wrap */
+}
+
+.storeLink {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.socialIcon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 800px) {
+  .footer {
+    flex-direction: column; /* Stack content vertically on smaller screens */
+    align-items: center; /* Center content */
+    text-align: center;
   }
-  
-  .left {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .logoImage {
-    width: 50px;
-    height: auto;
-  }
-  
-  .contact {
-    margin-top: 1rem;
-  }
-  
-  .contactEmail {
-    display: flex;
+
+  .left, .right {
     align-items: center;
-    font-size: 16px;
   }
-  
-  .icon {
-    margin-right: 0.5rem;
-    width: 20px;
-    height: 20px;
-  }
-  
-  .copyright {
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    color: #666666;
-    margin-top: 1rem;
-  }
-  
-  .privacy {
-    margin-left: 1rem;
-    color: #B6CE5A;
-    cursor: pointer;
-  }
-  
-  .right {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
-  
+
   .navLinks {
-    display: flex;
-    gap: 1.5rem;
-    font-size: 16px;
+    justify-content: center; /* Center nav links */
+    margin-bottom: 1rem;
   }
-  
-  .navLinks a {
-    text-decoration: none;
-    color: #B6CE5A;
-    font-weight: 600;
-  }
-  
+
   .socialLinks {
-    display: flex;
-    gap: 1rem;
+    justify-content: center; /* Center social icons */
     margin-top: 1rem;
   }
-  
-  .storeLink {
-    display: inline-block;
-    margin-right: 0.5rem;
+
+  .logoImage {
+    width: 40px; /* Scale down logo size */
   }
-  
-  .socialIcon {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
+
+  .contactEmail {
+    font-size: 14px; /* Reduce font size */
   }
-  
+
+  .copyright {
+    flex-direction: column; /* Stack copyright and privacy */
+    margin-top: 1rem;
+  }
+
+  .privacy {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+}

@@ -224,6 +224,11 @@ text-align: left;
 
 
 @media (max-width: 900px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     .sectionTwo {
         flex-direction: column; /* Stack images and text vertically */
         height: auto;

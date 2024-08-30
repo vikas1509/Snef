@@ -1,0 +1,86 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+    background-color: #111111;
+    color: #B6CE5A;
+    width: 80%;
+  }
+  
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .logoImage {
+    width: 50px;
+    height: auto;
+  }
+  
+  .contact {
+    margin-top: 1rem;
+  }
+  
+  .contactEmail {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+  }
+  
+  .icon {
+    margin-right: 0.5rem;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .copyright {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #666666;
+    margin-top: 1rem;
+  }
+  
+  .privacy {
+    margin-left: 1rem;
+    color: #B6CE5A;
+    cursor: pointer;
+  }
+  
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  
+  .navLinks {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 16px;
+  }
+  
+  .navLinks a {
+    text-decoration: none;
+    color: #B6CE5A;
+    font-weight: 600;
+  }
+  
+  .socialLinks {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .storeLink {
+    display: inline-block;
+    margin-right: 0.5rem;
+  }
+  
+  .socialIcon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+  }
+  

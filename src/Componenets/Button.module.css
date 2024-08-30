@@ -1,0 +1,12 @@
+.customButton{
+    background-color: #CFF57F;
+    width: fit-content;
+    padding: 8px 20px 8px 20px;
+    border-radius: 30px;
+    font-family: sans-serif;
+font-size: 13px;
+font-weight: 550;
+line-height: 28.9px;
+text-align: left;
+
+}

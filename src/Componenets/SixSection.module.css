@@ -1,0 +1,126 @@
+.section {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: #F4F4F4;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%; /* Ensure full width on smaller screens */
+}
+
+.heading {
+  font-family: sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #293119;
+  margin-bottom: 1.5rem;
+  text-align: center; /* Center text on smaller screens */
+}
+
+.inputGroup {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; /* Wrap input and button for smaller screens */
+  justify-content: center; /* Center content on smaller screens */
+}
+
+.urlInput {
+  background-color: #ffffff;
+  border-radius: 24px;
+  padding: 0.75rem 1rem;
+  margin-right: 1rem;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #7E858E;
+  flex-grow: 1;
+  text-align: center; /* Center text in input */
+}
+
+.placeholder {
+  color: #C4C4C4;
+}
+
+.claimButton {
+  background-color: #B6CE5A;
+  border: none;
+  border-radius: 24px;
+  padding: 0.75rem 1.5rem;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+  margin-top: 1rem; /* Add margin for spacing on smaller screens */
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  gap: 1rem;
+  justify-content: center; /* Center images on smaller screens */
+  background-color: #A6C466;
+  padding: 1rem;
+  border-radius: 4px;
+  position: relative;
+  flex-wrap: wrap; /* Wrap images for smaller screens */
+}
+
+.image {
+  width: 100%;
+  max-width: 300px; /* Set a max-width to control image size */
+  height: auto;
+  margin-bottom: 1rem; /* Add margin for spacing between images */
+}
+
+.accountImage {
+  width: 100%;
+  max-width: 200px; /* Control image size on smaller screens */
+  height: auto;
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+}
+
+@media (max-width: 800px) {
+  .section {
+    padding: 1rem;
+    flex-direction: column; /* Stack content vertically on smaller screens */
+  }
+
+  .heading {
+    font-size: 24px; /* Reduce heading size */
+  }
+
+  .inputGroup {
+    flex-direction: column; /* Stack input and button vertically */
+    align-items: center;
+    gap: 0.5rem; /* Adjust gap between input and button */
+  }
+
+  .urlInput {
+    margin-right: 0;
+    margin-bottom: 1rem; /* Add margin for spacing */
+  }
+
+  .right {
+    padding: 1rem 0; /* Adjust padding for smaller screens */
+    background-color: #f0f0f0; /* Lighter background on smaller screens */
+  }
+
+  .image {
+    max-width: 80%; /* Scale down images */
+  }
+
+  .accountImage {
+    max-width: 80%; /* Adjust account image size */
+    right: 10px;
+    bottom: 10px;
+  }
+}

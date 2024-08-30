@@ -1,0 +1,324 @@
+/* Main Section Styling */
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+   
+}
+
+/* Section One Styling */
+.sectionone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 72%;
+    margin-top: 7rem;
+}
+
+.headline {
+    font-family: sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: center;
+    color: var(--primary-green-10, #293119);
+}
+
+.Signup {
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31.25px;
+    text-align: center;
+}
+
+.inputsection {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.input {
+    height: 1rem;
+}
+
+/* Section Two Styling */
+.sectionTwo {
+    display: flex;
+    width: 72%;
+    height: 22.5rem;
+    background-color: #F4F4F4;
+    border-radius: 13px;
+    gap: 4rem;
+    position: relative; /* Added for positioning child elements */
+}
+
+.leftSectionTwo {
+    position: relative; /* Ensures that child elements are positioned relative to this */
+    width: 50%; /* Adjust width as needed */
+}
+
+.imageOne {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22.5rem;
+    z-index: 1; /* This image will be on top */
+}
+
+.imageTwo {
+    position: absolute;
+    top: 170px; /* Adjust this value to control vertical positioning */
+    left: 250px; /* Adjust this value to control horizontal positioning */
+    z-index: 2; /* This image will be underneath imageOne */
+}
+
+.rightSectionTwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 506px; /* Adjust width as needed */
+}
+.heading{
+    font-family: 'Gill Sans',  Calibri, 'Trebuchet MS', sans-serif;
+font-size: 40px;
+font-weight: 500;
+line-height: 54px;
+text-align: left;
+
+}
+.heading span{
+    border-bottom: 2px solid black;
+    font-weight: 700;
+}
+/* Section Three Styling */
+.sectionThree {
+    display: flex;
+    align-items: center;
+    width: 72%;
+    height: 27rem;
+    justify-content: space-between;
+}
+
+.sectionThreeLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.sectionThreeRight {
+    display: flex;
+    align-items: center;
+}
+
+/* Section Four Styling */
+.sectionFour {
+    display: flex;
+    width: 72%;
+    height: 30.5rem;
+    background-color: #F4F4F4;
+    border-radius: 4px;
+    gap: 6rem;
+    position: relative; /* Added for positioning child elements */
+}
+
+.leftSectionFour {
+    position: relative; /* Ensures that child elements are positioned relative to this */
+    width: 50%; /* Adjust width as needed */
+}
+
+.imageOneBag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* This image will be on top */
+}
+
+.imageTwoBag {
+    position: absolute;
+    top: 150px; /* Adjust this value to control vertical positioning */
+    left: 250px; /* Adjust this value to control horizontal positioning */
+    z-index: 2; /* This image will be underneath imageOneBag */
+}
+
+.rightSectionFour {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    width: 50%; /* Adjust width as needed */
+}
+
+.heading span{
+    border-bottom: 2px solid black;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+.sectionFive {
+    width: 72%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2rem;
+    background-color: #F4F4F4;
+    border-radius: 13px;
+    padding: 4rem;
+}
+
+.sectionFiveHeading {
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+   
+}
+
+.cardsContainer {
+    display: flex;
+    gap: 1rem;
+    
+}
+
+.card {
+    position: relative;
+    width: 200px;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+.cardButton {
+    position: absolute;
+    bottom: 10px; /* Positioned at the bottom of the image */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: .2rem .8rem;
+    border-radius: 17px;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28.9px;
+    text-align: left;
+    height: fit-content;
+    width: fit-content;
+    border: none;
+    z-index: 2; /* Ensure the button stays above the image */
+}
+
+
+
+@media (max-width: 900px) {
+    .sectionTwo {
+        flex-direction: column; /* Stack images and text vertically */
+        height: auto;
+        padding: 1rem;
+    }
+
+    .leftSectionTwo, .rightSectionTwo {
+        width: 100%; /* Full width for both sections */
+        text-align: center; /* Center-align text on smaller screens */
+    }
+
+    .imageOne, .imageTwo {
+        position: static; /* Remove absolute positioning for better responsiveness */
+        width: 80%; /* Reduce width to fit smaller screens */
+        height: auto; /* Maintain aspect ratio */
+        margin: 0 auto; /* Center images horizontally */
+    }
+
+    .rightSectionTwo {
+        align-items: center; /* Center-align content in the right section */
+        width: 100%;
+    }
+
+    .heading {
+        font-size: 28px; /* Reduce font size for smaller screens */
+        line-height: 36px;
+    }
+}
+@media (max-width: 800px) {
+    .sectionFive {
+        align-items: center;
+        text-align: center;
+    }
+
+    .cardsContainer {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+        gap: 2rem;
+    }
+
+    .card {
+        width: 100%; /* Full width for cards on smaller screens */
+    }
+
+    .cardButton {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        transform: none;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .sectionThree {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .sectionThreeLeft {
+        width: 50%;
+        gap: 1.5rem;
+    }
+
+    .sectionThreeRight {
+        width: 100%;
+    }
+
+    .heading {
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
+@media (max-width: 800px) {
+    .sectionFour {
+        flex-direction: flex;
+        height: auto;
+        gap: 2rem;
+        position: relative;
+        
+    }
+
+    .leftSectionFour, .rightSectionFour {
+        width: 100%;
+        text-align: center;
+    }
+
+    .imageOneBag,.imageTwoBag{
+height: 100px;
+width: 100px;
+padding: 1rem;
+margin: 1rem;
+    }
+    .imageTwoBag{
+        left: 5rem;
+        top: 4rem;
+    }
+}

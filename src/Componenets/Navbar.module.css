@@ -1,0 +1,57 @@
+/* Navbar.module.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000; /* Logo color */
+  }
+  
+  .menu {
+    display: flex;
+    gap: 1rem;
+    background-color: #f0f0f0;
+  }
+  
+  .menuItem {
+    /* Gray background */
+    background-color: #f0f0f0;
+    color: #000; /* Black text */
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .menuItem:hover {
+    background-color: #000; /* Black background on hover */
+    color: #00ff00; /* Green text on hover */
+  }
+  
+  .authButtons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .authButton {
+    background-color: #00ff00; /* Green background */
+    color: #fff; /* White text */
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .authButton:hover {
+    background-color: #00cc00; /* Darker green on hover */
+  }
+  
